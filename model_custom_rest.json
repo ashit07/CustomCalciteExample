@@ -1,0 +1,16 @@
+{
+  "version": "1.0",
+  "defaultSchema": “restsearch",
+  "schemas": [
+    {
+      "type": "custom",
+      "name": “custom-adapter”,
+      "factory": "org.apache.calcite.adapter.custom.CustomAdapterSchemaFactory",
+      "operand": {
+        “url”: "http://localhost:8080/BasicEmpRestService/get/data/emp",
+        "username”: "",
+        “password”: ""
+      }
+    }
+  ]
+}
